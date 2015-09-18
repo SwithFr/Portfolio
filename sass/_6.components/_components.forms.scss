@@ -1,0 +1,44 @@
+.contact {
+    padding: 7em 15em 0;
+}
+
+.contact__form {
+
+}
+
+.contact__form__label--placeholder {
+    position: relative;
+    bottom: 2.5em;
+
+    @include transition(bottom, $transitionDuration);
+}
+
+.contact__form__input:focus+.contact__form__label,
+.contact__form__input[value]:not([value=""])+.contact__form__label {
+    bottom: 4em;
+
+    color: $lightGrey;
+}
+
+.contact__form__label, .contact__form__input, .contact__form__textarea {
+    display: block;
+
+    font-size: 1em;
+    font-family: "fira_sanslight";
+
+    outline: none;
+}
+
+.contact__form__label, .contact__form__input {
+    @include noBorder;
+}
+
+.contact__form__input {
+    margin-bottom: 1em;
+}
+
+.contact__form__label__ex {
+    font-style: italic;
+    color: $lightGrey;
+    font-size: .8em;
+}
