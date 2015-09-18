@@ -35,17 +35,17 @@
             <h2 class="content__title">Me contacter</h2>
             <h3 class="content__subtitle">Vous cherchez un type sympa qui fera de son mieux pour répondre à vos besoins ? Ça tombe bien ! moi je cherche quelqu’un de sympa avec qui travailler.</h3>
             <form action="#" class="contact__form">
-                <label for="name">Prénom Nom</label>
-                <input type="text" name="name" id="name">
+                <input class="contact__form__input" onkeyup="this.setAttribute('value', this.value);" type="text" name="name" id="name">
+                <label class="contact__form__label contact__form__label--placeholder" for="name">Prénom Nom *</label>
 
-                <label for="email">Votre email</label>
-                <input type="email" name="email" id="email">
+                <input class="contact__form__input" onkeyup="this.setAttribute('value', this.value);" type="email" name="email" id="email">
+                <label class="contact__form__label contact__form__label--placeholder" for="email">Votre email <span class="contact__form__label__ex">(example@fai.fr)</span> *</label>
 
-                <label for="subject">Sujet</label>
-                <input type="text" name="subject" id="subject">
+                <input class="contact__form__input" onkeyup="this.setAttribute('value', this.value);" type="text" name="subject" id="subject">
+                <label class="contact__form__label contact__form__label--placeholder" for="subject">Sujet</label>
 
-                <label for="msg">Message</label>
-                <textarea name="msg" rows="8" cols="40"></textarea>
+                <label class="contact__form__label" for="msg">Message *</label>
+                <textarea class="contact__form__textarea" name="msg" rows="8" cols="40"></textarea>
             </form>
         </div>
     </div>
