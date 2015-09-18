@@ -1,0 +1,22 @@
+/* GRID */
+body {
+    position: relative;
+    display: table;
+    overflow: hidden;
+}
+
+%grid-cell {
+      display: table-cell;
+      min-height: 100%;
+}
+
+.wrap {
+    @extend %grid-cell;
+    vertical-align: top;
+}
+
+.content {
+    height: 100%;
+    padding: 8em;
+    overflow-y: scroll;
+}

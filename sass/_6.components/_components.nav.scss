@@ -1,0 +1,30 @@
+.nav {
+    width: 100%;
+    margin-top: 1em;
+
+    font-weight: normal;
+    color: $greyBlack;
+}
+
+.nav__item {
+    display: inline;
+    padding: .3em 0;
+
+    &:first-child, &:first-child+& {
+        margin-right: .5em;
+    }
+
+    a, a:visited {
+        color: $greyBlack;
+    }
+}
+
+.nav__item--bordered {
+    padding-right: 1em;
+
+    border-right: 1px solid $red;
+}
+
+.nav__item--scl {
+    font-family: "fira_sansregular";
+}
