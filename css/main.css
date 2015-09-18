@@ -242,6 +242,9 @@ body {
   border-right: 1px dashed #a5a5a5;
   transition: width 0.3s; }
 
+.about {
+  padding: 11em 15em 0; }
+
 .nav {
   width: 100%;
   margin-top: 1em;
@@ -297,6 +300,9 @@ body {
   font-style: italic;
   color: #a5a5a5;
   font-size: .8em; }
+
+.contact__form__textarea {
+  resize: none; }
 
 /*------------------------------------*    TRUMPS
 \*------------------------------------*/
