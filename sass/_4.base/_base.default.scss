@@ -22,3 +22,7 @@ a {
 p {
     margin: 1.5em 0;
 }
+
+input[type='submit']:hover {
+    cursor: pointer;
+}
