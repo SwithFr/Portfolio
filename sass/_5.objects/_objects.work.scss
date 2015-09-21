@@ -16,11 +16,42 @@
 
 .work__img {
     margin: .5em 0;
-
+    position: relative;
 
     img {
         max-width: 100%;
 
         border: 1px solid $lightGrey;
+    }
+}
+
+.work__img__link {
+    &:after {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 8px;
+        padding-top: 25%;
+
+        color: transparent;
+        text-align: center;
+
+        background-color: rgba(218, 52, 51, .8);
+        @include transition(all, $transitionDuration);
+    }
+}
+
+.work__img__link:hover {
+    &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: -1px;
+        bottom: 8px;
+
+        color: #fff;
     }
 }
