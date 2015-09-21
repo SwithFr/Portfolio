@@ -182,6 +182,7 @@ body {
 
 .work {
   margin-bottom: 3em;
+  position: relative;
   font-size: 1.1em;
   border-bottom: 1px dashed #a5a5a5; }
 
@@ -192,10 +193,32 @@ body {
   font-size: 1.5em; }
 
 .work__img {
-  margin: .5em 0;
-  border: 1px solid #a5a5a5; }
+  margin: .5em 0; }
   .work__img img {
-    max-width: 100%; }
+    max-width: 100%;
+    border: 1px solid #a5a5a5; }
+
+.adminToolBar {
+  position: absolute;
+  top: .6em;
+  right: 0;
+  font-family: 'fira_sansregular'; }
+  .adminToolBar a {
+    padding: 0 0.3em; }
+
+.adminToolBar__link--edit {
+  color: #a5a5a5; }
+
+.adminToolBar__link--delete {
+  color: #da3433; }
+
+.adminToolBar__link--save {
+  display: none;
+  color: #1abc9c; }
+
+.adminToolBar__link--abort {
+  display: none;
+  color: #da3433; }
 
 /*------------------------------------*    COMPONENTS
 \*------------------------------------*/
@@ -303,6 +326,23 @@ body {
 
 .contact__form__textarea {
   resize: none; }
+
+.editForm__input {
+  border: 1px dashed #a5a5a5;
+  outline: none; }
+
+.editForm__input--title {
+  padding: 0 0.3em;
+  color: #da3433;
+  font-family: "fira_sansregular";
+  font-size: 1.5em; }
+
+.editForm__input--description {
+  padding: .3em;
+  width: 98%;
+  font-size: 1.1em;
+  font-family: "fira_sanslight";
+  resize: vertical; }
 
 /*------------------------------------*    TRUMPS
 \*------------------------------------*/

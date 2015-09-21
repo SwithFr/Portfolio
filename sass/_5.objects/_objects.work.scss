@@ -1,5 +1,6 @@
 .work {
     margin-bottom: 3em;
+    position: relative;
 
     font-size: 1.1em;
 
@@ -16,9 +17,10 @@
 .work__img {
     margin: .5em 0;
 
-    border: 1px solid $lightGrey;
 
     img {
         max-width: 100%;
+
+        border: 1px solid $lightGrey;
     }
 }
