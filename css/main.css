@@ -139,6 +139,9 @@ a {
 p {
   margin: 1.5em 0; }
 
+input[type='submit']:hover {
+  cursor: pointer; }
+
 /*------------------------------------*    OBJECTS
 \*------------------------------------*/
 /* GRID */
@@ -193,10 +196,33 @@ body {
   font-size: 1.5em; }
 
 .work__img {
-  margin: .5em 0; }
+  margin: .5em 0;
+  position: relative; }
   .work__img img {
     max-width: 100%;
     border: 1px solid #a5a5a5; }
+
+.work__img__link:after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 8px;
+  padding-top: 25%;
+  color: transparent;
+  text-align: center;
+  background-color: rgba(218, 52, 51, 0.8);
+  transition: all 0.3s; }
+
+.work__img__link:hover:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -1px;
+  bottom: 8px;
+  color: #fff; }
 
 .adminToolBar {
   position: absolute;
@@ -249,8 +275,8 @@ body {
     font-family: "fira_sansregular"; }
 
 .header__subtitle {
-  margin-top: .5em;
-  letter-spacing: 3px;
+  margin-top: .3em;
+  font-size: 2em;
   font-weight: 300; }
   .header__subtitle span {
     color: #da3433; }
@@ -327,6 +353,15 @@ body {
 .contact__form__textarea {
   resize: none; }
 
+.contact__form__submit {
+  margin-top: 2em;
+  padding: 0.7em 2em;
+  float: right;
+  font-size: 1em;
+  font-family: 'fira_sanslight';
+  border: 1px solid #da3433;
+  background-color: transparent; }
+
 .editForm__input {
   border: 1px dashed #a5a5a5;
   outline: none; }
@@ -350,9 +385,66 @@ body {
   .ct, .header--left {
     min-width: 350px; } }
 
+@media screen and (max-width: 815px) {
+  .ct, .header--left {
+    display: block; }
+  .ct {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+    border-right: none;
+    border-bottom: 1px dashed #a5a5a5; }
+  .header {
+    position: relative; }
+  .header--left .header__title, .header--left .header__subtitle, .header--left .header__subtitle span {
+    display: none; }
+  .header--center {
+    position: absolute;
+    top: calc(50% - 150px); } }
+
+@media screen and (max-width: 1070px) {
+  .ct, .header--left {
+    min-width: 350px; } }
+
+@media screen and (max-width: 815px) {
+  .ct, .header--left {
+    display: block; }
+  .ct {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+    border-right: none;
+    border-bottom: 1px dashed #a5a5a5; }
+  .header {
+    position: relative; }
+  .header--left .header__title, .header--left .header__subtitle, .header--left .header__subtitle span {
+    display: none; }
+  .header--center {
+    position: absolute;
+    top: calc(50% - 150px); } }
+
 @media screen and (max-width: 1370px) {
   .about {
     padding: 5em; } }
+
+@media screen and (max-width: 815px) {
+  .about {
+    padding: 2em; } }
+
+@media screen and (max-width: 815px) {
+  .header--left .nav {
+    margin-top: .5em; }
+  .header--left .nav__item {
+    padding: 0; }
+  .header--left .nav__item--bordered {
+    border: none; } }
+
+@media screen and (max-width: 815px) {
+  .content__title {
+    font-size: 1.5em; }
+  .content__subtitle {
+    font-family: 'fira_sanslight';
+    font-size: 1em; } }
 
 @media screen and (max-width: 1370px) {
   .works {
@@ -361,3 +453,23 @@ body {
 @media screen and (max-width: 1070px) {
   .works {
     padding: 3em; } }
+
+@media screen and (max-width: 815px) {
+  .works {
+    padding: 2em; } }
+
+@media screen and (max-width: 815px) {
+  .work__description {
+    font-size: .8em; } }
+
+@media screen and (max-width: 815px) {
+  .contact {
+    padding: 2em; } }
+
+@media screen and (max-width: 815px) {
+  body {
+    overflow: visible; }
+  .wrap {
+    display: block; }
+  .header--left svg {
+    width: 50px; } }
