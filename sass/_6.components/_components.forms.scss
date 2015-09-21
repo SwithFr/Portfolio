@@ -46,3 +46,15 @@
 .contact__form__textarea {
     resize: none;
 }
+
+.contact__form__submit {
+    margin-top: 2em;
+    padding: .7em 2em;
+    float: right;
+
+    font-size: 1em;
+    font-family: 'fira_sanslight';
+
+    border: 1px solid $red;
+    background-color: transparent;
+}
