@@ -5,3 +5,33 @@
     }
 
 }
+
+@media screen and (max-width: 815px) {
+
+    .ct, .header--left {
+        display: block;
+    }
+
+    .ct {
+        width: 100%;
+        height: auto;
+        padding-bottom: 1em;
+
+        border-right: none;
+        border-bottom: 1px dashed $lightGrey;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header--left .header__title, .header--left .header__subtitle, .header--left .header__subtitle span {
+        display: none;
+    }
+
+    .header--center {
+        position: absolute;
+        top: calc(50% - 150px);
+    }
+
+}
